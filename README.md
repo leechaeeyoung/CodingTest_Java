@@ -1,2 +1,23 @@
-# CodingTest_Java
-프로그래머스 코딩테스트 연습
+### 1.해시(Hash)
+- `해시(Hash)`: 입력 데이터를 고정된 길이의 데이터로 변한된 값(HashCode, HashValue..)
+  - 데이터의 KEY값이 해시함수를 통해 변환된 간단한 정수
+    - 배열의 index, 위치, 데이터 값을 저장-검색할때 활용
+- Java Collection Framwork
+  - `List`: 순서o 중복o, 인덱스로 원소에 접근 가능
+    - LinkedList: 양방향 포인터 구조로 데이터 삽입(ArrayList보다 검색느림)
+    - ArrayList: 단방향 포인터 구조(순차적 접근), 배열 기반 데이터 저장
+  - `Map`: 순서x 중복x, key-value 한쌍으로 이루어진 데이터 집합
+    - HashMap
+      - key 중복 x, 순서x
+      - key-value값으로 NULL허용
+    - HashTable: 병렬가능, key-valuer값으로 NULL허용x
+    - LinkedHashMap: 입력된 순서를 보장
+    - TreeMap: 이진탐색트리 기반으로 키와 값을 저장(key값이 오름차순 정렬됨)
+  - `Set`: 순서x 중복x, 데이터 집합
+    - HashSet
+      - 인스턴스의 해시값을 기준으로 저장하기 떄문에 순서x
+      - Null허용, 삽입과 삭제가 빠름
+    - TreeSet
+      - 이진탐색트리를 기반으로 한다
+      - 데이터들 오름차순 정렬, 삽입 삭제가 느리지만 정렬은 빠름
+    - LinkedHashSet: 입력 순서를 보장
